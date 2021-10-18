@@ -21,7 +21,7 @@ echo "\nCON welcome to MUK LINK UPS";
 if ($textFromUser == ""){
 //This is the first request> Note how we start the response with CON
 
-echo "\n1. Register";
+echo "\n1. Regiister";
 echo "\n2. My Account";
 
 } elseif($textFromUser == "1"){
