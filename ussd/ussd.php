@@ -25,10 +25,10 @@ echo "\n1. Regiister";
 echo "\n2. My Account";
 
 } elseif($textFromUser == "1"){
-	echo "CON Username";
+	echo "Username";
 
 }elseif ($inputArray[0] == "1" && $level ==2) {
-	echo "CON Age";
+	echo "Age";
 } 
 
 
