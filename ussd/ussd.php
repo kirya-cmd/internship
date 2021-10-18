@@ -25,10 +25,10 @@ echo "\n1. Register";
 echo "\n2. My Account";
 
 } elseif($textFromUser == "1"){
-	echo "\n Username";
+	echo "\n Enter Username";
 
 }elseif ($inputArray[0] == "1" && $level ==2) {
-	echo "\n Age";
+	echo "\n Enter Age";
 } 
 
 
