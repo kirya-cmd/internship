@@ -29,7 +29,9 @@ echo "\n2. My Account";
 
 }elseif ($inputArray[0] == "1" && $level ==2) {
 	echo "\n Enter Age";
-} 
+} elseif ($inputArray[0] == "1" && $level ==3){
+	echo "\n Enter Phone Number";
+}	
 
 
 else if($textFromUser == "2"){
