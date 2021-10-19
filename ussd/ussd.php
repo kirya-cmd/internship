@@ -31,7 +31,16 @@ echo "\n2. My Account";
 	echo "\n Enter Age";
 } elseif ($inputArray[0] == "1" && $level ==3){
 	echo "\n Enter Phone Number";
-}	
+
+} elseif ($inputArray[0] == "1" && $level ==4){
+	echo "\n Enter Hostel/Residence";
+	
+}	elseif ($inputArray[0] == "1" && $level ==5){
+	echo "\n Select Gender";
+	echo "\n1. Male";
+    echo "\n2. Female";
+}
+
 
 
 else if($textFromUser == "2"){
