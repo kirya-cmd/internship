@@ -40,7 +40,14 @@ echo "\n2. My Account";
 	echo "\n1. Male";
     echo "\n2. Female";
     
-}else if($textFromUser == "2"){
+}
+if($inputArray[1]  == 1)
+	$user_name = $inputArray[2];
+    $saveUser = $sqlicon->query("INSERT INTO users(phone_number, user_name, residence, gender, age)VALUES('$phone_number','$user_name', '$residence', '$gender', '$age')");
+
+
+
+else if($textFromUser == "2"){
 //Business logic for the first level response
 //This is a terminal request> Note how we start the response with END
 echo "END Your phone number is ".$phoneNumber;
