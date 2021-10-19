@@ -39,15 +39,12 @@ echo "\n2. My Account";
 	echo "\n Select Gender";
 	echo "\n1. Male";
     echo "\n2. Female";
-}
-
-
-
-else if($textFromUser == "2"){
+    
+}else if($textFromUser == "2"){
 //Business logic for the first level response
 //This is a terminal request> Note how we start the response with END
 echo "END Your phone number is ".$phoneNumber;
-}
+
 
 }else if ($textFromUser = "1*2"){
 //This is a second level response where the user selected 1 in the first instance
