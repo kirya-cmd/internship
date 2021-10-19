@@ -47,13 +47,7 @@ else if($textFromUser == "2"){
 //Business logic for the first level response
 //This is a terminal request> Note how we start the response with END
 echo "END Your phone number is ".$phoneNumber;
-
-}else if ($textFromUser == "1*1"){
-//this is a second level response where the user selected 1 in the first instance
-$accountNumber = "ACC1001";
-
-//This is a terminal request. note how we start with END
-$response = "END Your account Number is".$accountNumber;
+}
 
 }else if ($textFromUser = "1*2"){
 //This is a second level response where the user selected 1 in the first instance
