@@ -57,5 +57,5 @@ echo "END Your phone number is ".$phoneNumber;
 }else if ($textFromUser = "1*2*3"){
 //This is a second level response where the user selected 1 in the first instance
 //this is a terminal request. Note how we start with END
-echo "\nThanks for Registering";
+echo "\nEND Thanks for Registering";
 }
