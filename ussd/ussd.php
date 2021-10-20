@@ -36,10 +36,8 @@ echo "\n2. My Account";
 	echo "\n Enter Hostel/Residence";
 	
 }	elseif ($inputArray[0] == "1" && $level ==5){
-	echo "\n Select Gender";
-	echo "\n1. Male";
-    echo "\n2. Female";
-    
+	echo "\n What is your Gender";
+	 
 
 }if($textFromUser  == "1"){
 	$user_name = $inputArray[2];
@@ -47,7 +45,7 @@ echo "\n2. My Account";
 
      if($saveUser){
      	$message = "Hello".$user_name."Thank you for registering with Muk link up";
-     	$apikey = "";
+     	$apikey = "28315ae877327754b8921a7831fe9b730217796ea57861a36be0c7eb4c2fd2a0";
      	$gateway = new AfricasTalkingGateway("sandbox", $apikey, "sandbox");
      	$gateway->sendMessage($phone_number, $message_);
      	echo "END Thank you for registering";
