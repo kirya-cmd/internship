@@ -40,20 +40,65 @@ echo "\n2. My Account";
 	echo "\n1. Male";
     echo "\n2. Female";
     
-}
-if($textFromUser  == 1){
+}elseif($textFromUser == "2"){
+	$checkusers = $sqlicon->query("SELECT * FROM users where phone_number = '$phone_number'");
+	if($checkusers->num_rows == 0)
+		echo "END User with phone_number $phone_number is not registered";
+
+}if($textFromUser  == "1"){
 	$user_name = $inputArray[2];
     $saveUser = $sqlicon->query("INSERT INTO users(phone_number, user_name, residence, gender, age)VALUES('$phone_number','$user_name', '$residence', 'gender', 'age')");
 
 
 }
 
-elseif($textFromUser == "2"){
-	$checkusers = $sqlicon->query("SELECT * FROM users where phone_number = '$phone_number'");
-	if($checkusers->num_rows == 0)
-		echo "END User with phone_number $phone_number is not registered";
 
-}else if($textFromUser == "2"){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+else if($textFromUser == "2"){
 //Business logic for the first level response
 //This is a terminal request> Note how we start the response with END
 echo "END Your phone number is ".$phoneNumber;
@@ -64,3 +109,4 @@ echo "END Your phone number is ".$phoneNumber;
 //this is a terminal request. Note how we start with END
 
 }
+*/
