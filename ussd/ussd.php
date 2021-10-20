@@ -47,7 +47,7 @@ echo "\n2. My Account";
 
 	else{
 		while ($results = $checkusers->fetch_assoc()){
-			echo "CON".$results['user_name']."\nWelcome";
+			echo "CON".$results['user_name']."\n Welcome";
 		}
 	}
 }else{
@@ -58,18 +58,16 @@ echo "\n2. My Account";
 	$user_name = $inputArray[2];
     $saveUser = $sqlicon->query("INSERT INTO users(phone_number, user_name, residence, gender, age)VALUES('$phone_number','$user_name', '$residence', 'gender', 'age')");
 
-
-}
-
-
-
-
-
-
-
-
-
-
+     if($saveUser){
+     	$message = "Hello".$user_name."Thank you for registering with Muk link up";
+     	$apikey = "";
+     	$gateway = new AfricasTalkingGateway("sandbox", $apikey, "sandbox");
+     	$gateway->sendMessage($phone_number, $message_);
+     	echo "END Thank you for registering";
+     }else{
+     	echo "END Failed to register".$sqlicon->error;
+     }
+ }
 
 
 
@@ -106,16 +104,15 @@ echo "\n2. My Account";
 
 
 
-/*
-else if($textFromUser == "2"){
-//Business logic for the first level response
-//This is a terminal request> Note how we start the response with END
-echo "END Your phone number is ".$phoneNumber;
 
 
-}else if ($textFromUser = "1*2"){
-//This is a second level response where the user selected 1 in the first instance
-//this is a terminal request. Note how we start with END
 
-}
-*/
+
+
+
+
+
+
+
+
+ 
