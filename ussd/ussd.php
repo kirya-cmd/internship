@@ -40,19 +40,6 @@ echo "\n2. My Account";
 	echo "\n1. Male";
     echo "\n2. Female";
     
-}elseif($textFromUser == "2"){
-	$checkusers = $sqlicon->query("SELECT * FROM users where phone_number = '$phone_number'");
-	if($checkusers->num_rows == 0)
-		echo "END User with phone_number $phone_number is not registered";
-
-	else{
-		while ($results = $checkusers->fetch_assoc()){
-			echo "CON".$results['user_name']."\n Welcome";
-		}
-	}
-}else{
-	echo "END Invalid option";
-
 
 }if($textFromUser  == "1"){
 	$user_name = $inputArray[2];
