@@ -17,7 +17,7 @@ $level = 0;
 
 $level = count($inputArray);
 
-echo "\nCON welcome to MUK LINK UPS";
+echo "\n END welcome to MUK LINK UPS";
  
 
 if ($textFromUser == ""){
