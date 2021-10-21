@@ -17,7 +17,7 @@ $level = 0;
 
 $level = count($inputArray);
 
-echo "\n END welcome to MUK LINK UPS";
+echo "\n Welcome to MUK LINK UPS";
  
 
 if ($textFromUser == ""){
@@ -40,6 +40,9 @@ echo "\n2. My Account";
 }	elseif ($inputArray[0] == "1" && $level ==5){
 	echo "\n What is your Gender";
 	 
+
+}elseif($inputArray[0] == "1" && $level ==6){
+        echo "\n END Thanks for registering with Us!";
 
 }else{
          //connect to DB and register a user. 
