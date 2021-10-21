@@ -41,11 +41,7 @@ echo "\n2. My Account";
 	echo "\n What is your Gender";
 	 
 
-}elseif($inputArray[0] == "1" && $level ==6){
-        echo "\n Thanks for registering with Us!";
-
-}
-else{
+}else{
          //connect to DB and register a user. 
         echo "END You have been registered";
         $sms = new Sms();
