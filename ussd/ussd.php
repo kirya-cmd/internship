@@ -1,4 +1,6 @@
 <?php 
+
+
 header("content-type:text/plane");
 
 $phone_number = $_POST['phoneNumber'];
@@ -39,7 +41,21 @@ echo "\n2. My Account";
 	echo "\n What is your Gender";
 	 
 
-}if($textFromUser  == "1"){
+}else{
+         //connect to DB and register a user. 
+        echo "END You have been registered";
+        $sms = new Sms();
+        $message = "You have been registered";
+        $sms->sendSms($message,$phoneNumber);
+        
+                }
+
+
+
+
+
+
+if($textFromUser  == "1"){
 	$user_name = $inputArray[2];
     $saveUser = $sqlicon->query("INSERT INTO users(phone_number, user_name, residence, gender, age)VALUES('$phone_number','$user_name', '$residence', 'gender', 'age')");
 
@@ -47,7 +63,7 @@ echo "\n2. My Account";
      	$message = "Hello".$user_name."Thank you for registering with Muk link up";
      	$apikey = "28315ae877327754b8921a7831fe9b730217796ea57861a36be0c7eb4c2fd2a0";
      	$gateway = new AfricasTalkingGateway("sandbox", $apikey, "sandbox");
-     	$gateway->sendMessage($phone_number, $message_);
+     	$gateway->sendMessage($phone_number, $message);
      	echo "END Thank you for registering";
      }else{
      	echo "END Failed to register".$sqlicon->error;
