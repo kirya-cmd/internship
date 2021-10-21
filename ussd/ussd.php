@@ -42,7 +42,7 @@ echo "\n2. My Account";
 	 
 
 }elseif($inputArray[0] == "1" && $level ==6){
-        echo "\n END Thanks for registering with Us!";
+        echo "\n Thanks for registering with Us!";
 
 }
 else{
