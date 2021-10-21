@@ -44,7 +44,8 @@ echo "\n2. My Account";
 }elseif($inputArray[0] == "1" && $level ==6){
         echo "\n END Thanks for registering with Us!";
 
-}else{
+}
+else{
          //connect to DB and register a user. 
         echo "END You have been registered";
         $sms = new Sms();
