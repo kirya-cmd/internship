@@ -17,16 +17,16 @@ $level = 0;
 
 $level = count($inputArray);
 
-if ($textFromUser == ""){
-echo "CON Welcome to MUK LINK UPS\n";
+echo "\nCON Welcome to MUK LINK UPS";
  
 
+if ($textFromUser == ""){
 //This is the first request> Note how we start the response with CON
 
 echo "\n1. Register";
 echo "\n2. My Account";
 
-} elseif($textFromUser == "1*1"){
+} elseif($textFromUser == "1"){
         echo "\nEnter Username";
 
 }elseif ($inputArray[0] == "1" && $level ==2) {
@@ -69,10 +69,6 @@ if($textFromUser  == "1"){
 
 
 ?>
-
-
-
-
 
 
 
