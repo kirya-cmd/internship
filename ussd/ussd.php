@@ -26,18 +26,18 @@ echo "CON Welcome to MUK LINK UPS\n";
 echo "\n1. Register";
 echo "\n2. My Account";
 
-} elseif($textFromUser == "1"){
+} elseif($textFromUser == "1*1"){
         echo "\nEnter Username";
 
-}elseif ($inputArray[1] == "1" && $level ==2) {
+}elseif ($inputArray[0] == "1" && $level ==2) {
         echo "\nEnter Age";
-} elseif ($inputArray[1] == "1" && $level ==3){
+} elseif ($inputArray[0] == "1" && $level ==3){
         echo "\nEnter Phone Number";
 
-} elseif ($inputArray[1] == "1" && $level ==4){
+} elseif ($inputArray[0] == "1" && $level ==4){
         echo "\n Enter Hostel/Residence";
         
-}       elseif ($inputArray[1] == "1" && $level ==5){
+}       elseif ($inputArray[0] == "1" && $level ==5){
         echo "\n What is your Gender";
          
 
