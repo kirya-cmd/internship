@@ -27,12 +27,12 @@ echo "\n1. Register";
 echo "\n2. My Account";
 
 } elseif($textFromUser == "1"){
-	echo "\n Enter Username";
+	echo "\nCON Enter Username";
 
 }elseif ($inputArray[0] == "1" && $level ==2) {
-	echo "\n Enter Age";
+	echo "\nCON Enter Age";
 } elseif ($inputArray[0] == "1" && $level ==3){
-	echo "\n Enter Phone Number";
+	echo "\nCON Enter Phone Number";
 
 } elseif ($inputArray[0] == "1" && $level ==4){
 	echo "\n Enter Hostel/Residence";
