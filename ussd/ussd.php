@@ -42,7 +42,25 @@ echo "\n2. My Account";
          
 
 }else{
+        //$username= $level[];
+        $age = $level[2];
+        $phone_number= $level[3];
+        $residence=$level[4];
+        $gender=$level[5];
+        $username="kirya";
+
+$sql = "INSERT INTO users (phone_number, user_name, residence,gender,age) VALUES ($phone_number, $username, $residence,$gender,$age)";
+        if(mysqli_query($link, $sql)){
+    //echo "Records inserted successfully.";
+
+
+
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
          //connect to DB and register a user. 
+        }
         echo "END You have been registered";
         $sms = new Sms();
         $message = "You have been registered";
