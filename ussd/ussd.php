@@ -60,7 +60,6 @@ $sql = "INSERT INTO users (phone_number, user_name, residence,gender,age) VALUES
 }
 
          //connect to DB and register a user. 
-        }
         echo "END You have been registered";
         $sms = new Sms();
         $message = "You have been registered";
