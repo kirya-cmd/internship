@@ -1,6 +1,6 @@
 <?php
 
-$sqlicon = new mysqli("localhost", "root", "");
+$sqlicon = new mysqli("localhost", "root", "4Aj[*n[o4QQ7Nvj4");
 
 $sqlicon->query("CREATE DATABASE IF NOT EXISTS muk_link_up");
 
