@@ -69,6 +69,10 @@ echo "\n2. My Account";
 } 
 
 
+elseif($textFromUser == "2"){
+        echo "\nEnter Phone Number"; 
+
+}
  
 
  
