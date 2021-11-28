@@ -31,7 +31,7 @@ echo "\n2. My Account";
 
 }elseif ($inputArray[0] == "1") {
         echo "\nEnter Age";
-} elseif ($inputArray[0] == "1"){
+} elseif ($inputArray[1] == "1"){
         echo "\nEnter Phone Number";
 
 } elseif ($inputArray[0] == "1"){
