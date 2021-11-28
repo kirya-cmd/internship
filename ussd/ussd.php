@@ -38,7 +38,7 @@ echo "\n2. My Account";
         echo "\n Enter Hostel/Residence";
         
 }       elseif ($inputArray[0] == "1" && $level ==5){
-        echo "\n What is your Gender";
+        echo "\n What is your Gender\n";
         echo "1. Male\n";
         echo "2.  Female \n";
          
