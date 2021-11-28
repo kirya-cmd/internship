@@ -41,10 +41,7 @@ echo "\n2. My Account";
         echo "\n What is your Gender";
          
 
-}
-
-{
-         //connect to DB and register a user. 
+} else{  //connect to DB and register a user. 
         echo "END You have been registered";
       
         $message = "You have been registered";
