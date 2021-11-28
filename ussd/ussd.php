@@ -29,34 +29,26 @@ echo "\n2. My Account";
 } elseif($textFromUser == "1"){
         echo "\nEnter Username";
 
-}elseif ($inputArray[0] == "1") {
+}elseif ($inputArray[0] == "1" && $level ==2) {
         echo "\nEnter Age";
-} elseif ($inputArray[1] == "1"){
+} elseif ($inputArray[0] == "1" && $level ==3){
         echo "\nEnter Phone Number";
 
-} elseif ($inputArray[0] == "1"){
+} elseif ($inputArray[0] == "1" && $level ==4){
         echo "\n Enter Hostel/Residence";
         
-}       elseif ($inputArray[0] == "1"){
+}       elseif ($inputArray[0] == "1" && $level ==5){
         echo "\n What is your Gender";
          
 
-}else{
-        //$username= $level[];
-        $age = $level[2];
-        $phone_number= $level[3];
-        $residence=$level[4];
-        $gender=$level[5];
-        $username="kirya";
+}
 
-
-       
-
+{
          //connect to DB and register a user. 
         echo "END You have been registered";
-        $sms = new Sms();
+      
         $message = "You have been registered";
-        $sms->sendSms($message,$phoneNumber);
+        
         
                 }
 
