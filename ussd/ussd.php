@@ -39,8 +39,8 @@ echo "\n2. My Account";
         
 }       elseif ($inputArray[0] == "1" && $level ==5){
         echo "\n What is your Gender";
-        $response .= "1. Male\n";
-        $response.= "2.  Female \n";
+        echo "1. Male\n";
+        echo "2.  Female \n";
          
 
 } else{  //connect to DB and register a user. 
