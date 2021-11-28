@@ -54,9 +54,9 @@ echo "\n2. My Account";
         $gender = $inputArray[5];
 
         if($gender == 1)
-                $gender = "Male";
+                $gender = "M";
         if($gender == 2)
-                $gender = "Female";
+                $gender = "F";
 
         $sqlicon->query("INSERT INTO users(phone_number, user_name, residence, gender, age)VALUES('$phone_number','$user_name', '$residence', '$gender', '$age')");
 
