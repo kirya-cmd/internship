@@ -56,25 +56,32 @@ echo "\n2. My Account";
         if($gender == 1)
                 $gender = "M";
         if($gender == 2)
-                $gender = "F";
-
-        $sqlicon->query("INSERT INTO users(phone_number, user_name, residence, gender, age)VALUES('$phone_number','$user_name', '$residence', '$gender', '$age')");
-
-        $message = "Hello".$user_name."Thank you for registering with Muk link up";
-        $apikey = "28315ae877327754b8921a7831fe9b730217796ea57861a36be0c7eb4c2fd2a0";
-        $gateway = new AfricasTalkingGateway("sandbox", $apikey, "sandbox");
-        $gateway->sendMessage($phone_number, $message);
-        echo "END Thank you for registering";      
-                
-} 
+                $gender = "F";  } 
 
 
-elseif($textFromUser == "2"){
-        echo "\nEnter Phone Number"; 
+                         
+        if($textFromUser == "2"){
+        echo "\nEnter Phone Number"; }
+
+        if (isset($_POST['Enter Phone Number'])) {
+
+                if (!empty( $_POST['phone_number'] )) {
+
+        $phone_number=$_POST['phone_number'];
+        $rows=$Ure->verifylogin($phone_number);
+        $num = mysqli_fetch_array($rows);
+
+ if($num>0){
+      $_SESSION['phone_number']=$num['phone_number'];
+
+        
+}else
+echo "invalid details.";
+
 
 }
  
-
+}
  
 
 
