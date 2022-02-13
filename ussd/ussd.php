@@ -65,12 +65,11 @@ echo "\n2. My Account";
 
      $sqlicon = mysqli_connect("localhost", "root", "4Aj[*n[o4QQ7Nvj4","muk_link_up"); 
 
-     if(isset($_POST['submit']))
+     if(isset($_POST['2']))
   {
- $user_name =$_POST['user_name'];
  $phone_number = $_POST['$phone_number'];   
 
- $sql = "SELECT * FROM  users WHERE user_name='$user_name' AND phone_number='$phone_number' ";
+ $sqlicon = "SELECT * FROM  users WHERE phone_number='$phone_number' ";
  $res = mysqli_query($sqlicon, $sql);
 
  $count = mysqli_num_rows($res);
