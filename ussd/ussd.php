@@ -1,4 +1,4 @@
-<?php 
+   <?php 
 require("db.php");
 
 header("content-type:text/plane");
@@ -61,31 +61,37 @@ echo "\n2. My Account";
 
                          
         if($textFromUser == "2"){
-        echo "\nEnter Phone Number"; }
+        echo "\nEnter Phoone Number"; }
 
-        if (isset($_POST['Enter Phone Number'])) {
+     $sqlicon = mysqli_connect("localhost", "root", "4Aj[*n[o4QQ7Nvj4","muk_link_up"); 
 
-                if (!empty( $_POST['phone_number'] )) {
+     if(isset($_POST['submit']))
+  {
+ $user_name =$_POST['user_name'];
+ $phone_number = $_POST['$phone_number'];   
 
-        $phone_number=$_POST['phone_number'];
-        $rows=$Ure->verifylogin($phone_number);
-        $num = mysqli_fetch_array($rows);
+ $sql = "SELECT * FROM  users WHERE user_name='$user_name' AND phone_number='$phone_number' ";
+ $res = mysqli_query($sqlicon, $sql);
 
- if($num>0){
-      $_SESSION['phone_number']=$num['phone_number'];
+ $count = mysqli_num_rows($res);
 
-        
-}else
-echo "invalid details.";
-
-
+ if($count==1)
+ {
+    ?>
+    <script type="text/javascript">
+        alert("Login Successful!");
+    </script>
+    <?php
+ }
+ else
+ {
+        ?>
+    <script type="text/javascript">
+        alert("Login Failed!");
+    </script>
+   <?php
 }
- 
 }
- 
-
-
-
 ?>
 
 
