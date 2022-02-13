@@ -1,5 +1,6 @@
    <?php 
 require("db.php");
+$sqlicon = mysqli_connect("localhost", "root", "4Aj[*n[o4QQ7Nvj4","muk_link_up"); 
 
 header("content-type:text/plane");
 
@@ -61,6 +62,7 @@ echo "\n2. My Account";
 
                          
         if($textFromUser == "2"){
+
         echo "\nEnter Phoone Number"; 
  $phone_number = $_POST['$phone_number'];   
 
